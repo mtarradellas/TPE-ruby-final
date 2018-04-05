@@ -1,0 +1,9 @@
+--- !ruby/object:TaskManager
+tasks_hash: {}
+sets: !ruby/object:Sets
+  all_set: !ruby/object:SortedSet
+    keys: 
+    hash: {}
+  groups_hash: !ruby/object:GroupsHash
+    groups_hash: {}
+id_counter: 1

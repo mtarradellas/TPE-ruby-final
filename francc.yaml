@@ -1,0 +1,23 @@
+--- !ruby/object:TaskManager
+tasks_hash:
+  1: &1 !ruby/object:Task
+    task_name: ncnskdkls
+    due_date: 
+    group_name: 
+    completed: 
+    id: 1
+  2: &2 !ruby/object:Task
+    task_name: skscskcs
+    due_date: 
+    group_name: 
+    completed: 
+    id: 2
+sets: !ruby/object:Sets
+  all_set: !ruby/object:SortedSet
+    keys: 
+    hash:
+      *1: true
+      *2: true
+  groups_hash: !ruby/object:GroupsHash
+    groups_hash: {}
+id_counter: 2

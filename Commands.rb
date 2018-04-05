@@ -25,7 +25,7 @@ class Commands
 	end
 
 	def analize(command)
-		@string = command
+		@string = command.downcase
 	end
 
 	def obtain_command
@@ -89,9 +89,9 @@ class Commands
 	end
 
 	def validate_date
-		return @date = Date.today if @date == "today"
-		return @date = Date.today - 1 if @date == "yesterday"
-		return @date = Date.today + 1 if @date == "tomorrow"
+		return @date = Date.today if @date.upcase == "TODAY" 
+		return @date = Date.today - 1 if @date.upcase == "YESTERDAY"
+		return @date = Date.today + 1 if @date.upcase == "TOMORROW"
 
 		raise InvalidDate unless @date.length == 10
 		raise InvalidDate if (/\d{2}\/\d{2}\/\d{4}/ =~ @date).nil?

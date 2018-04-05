@@ -12,7 +12,7 @@ class Front
 	end
 
 	def save_file(file_name, task_manager)
-		File.open("#{file_name}.yaml", "w") { |file| file.write(@task_manager.to_yaml)}
+		File.open("#{file_name}", "w") { |file| file.write(@task_manager.to_yaml)}
 	end
 
 	def open_file(file_name)
@@ -26,7 +26,7 @@ class Front
 
 	def execute
 		
-		while (command = (command = gets).gsub(/\s+/, " ").strip) != "exit"
+		while (command = (command = gets).gsub(/\s+/, " ").strip.downcase) != "exit"
 		begin
 
 			@command_manager.analize command

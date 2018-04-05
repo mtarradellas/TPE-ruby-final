@@ -1,0 +1,111 @@
+--- !ruby/object:TaskManager
+tasks_hash:
+  1: &1 !ruby/object:Task
+    task_name: tpe
+    due_date: 2018-04-05
+    group_name: "+poo"
+    completed: X
+    id: 1
+  2: &2 !ruby/object:Task
+    task_name: parcial
+    due_date: 2018-04-13
+    group_name: "+poo"
+    completed: 
+    id: 2
+  3: &3 !ruby/object:Task
+    task_name: practica 3
+    due_date: 2018-04-04
+    group_name: "+logica"
+    completed: X
+    id: 3
+  4: &4 !ruby/object:Task
+    task_name: hacer compras
+    due_date: 2018-04-06
+    group_name: 
+    completed: 
+    id: 4
+  5: &5 !ruby/object:Task
+    task_name: parcial
+    due_date: 2018-04-17
+    group_name: "+logica"
+    completed: 
+    id: 5
+  6: &6 !ruby/object:Task
+    task_name: asado
+    due_date: 2018-04-05
+    group_name: 
+    completed: 
+    id: 6
+  8: &7 !ruby/object:Task
+    task_name: fin parciales
+    due_date: 2018-04-19
+    group_name: 
+    completed: 
+    id: 8
+  9: &8 !ruby/object:Task
+    task_name: tp java
+    due_date: 
+    group_name: "+poo"
+    completed: 
+    id: 9
+  10: &9 !ruby/object:Task
+    task_name: zoologico
+    due_date: 
+    group_name: 
+    completed: X
+    id: 10
+  11: &10 !ruby/object:Task
+    task_name: ver infinity war
+    due_date: 2018-04-26
+    group_name: 
+    completed: 
+    id: 11
+  12: &11 !ruby/object:Task
+    task_name: ver black panther
+    due_date: 
+    group_name: 
+    completed: X
+    id: 12
+  13: &12 !ruby/object:Task
+    task_name: terminar practica 3
+    due_date: 2018-04-10
+    group_name: "+poo"
+    completed: 
+    id: 13
+sets: !ruby/object:Sets
+  all_set: !ruby/object:SortedSet
+    keys: 
+    hash:
+      *1: true
+      *2: true
+      *3: true
+      *4: true
+      *5: true
+      *6: true
+      *7: true
+      *8: true
+      *9: true
+      *10: true
+      *11: true
+      *12: true
+  groups_hash: !ruby/object:GroupsHash
+    groups_hash:
+      "+poo": !ruby/object:SortedSet
+        keys:
+        - *8
+        - *1
+        - *12
+        - *2
+        hash:
+          *1: true
+          *2: true
+          *8: true
+          *12: true
+      "+logica": !ruby/object:SortedSet
+        keys:
+        - *3
+        - *5
+        hash:
+          *3: true
+          *5: true
+id_counter: 13
